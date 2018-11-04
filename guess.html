@@ -3,27 +3,30 @@
 <body>
 <script>
 
-var secret#;
+var secret;
 var guess;
+var number_guess;
 
-secret#= 45;
-guess=prompt("Guess the secret number!")
+secret=45;
+guess=prompt("Guess the secret number!");
+number_guess=parseInt(guess);
 
-if(guess===45)
+
+if(number_guess===secret)
 {
 alert("You got it!")
 }
-else if(guess===44)
+else if(number_guess===44)
 {
 alert("Close, but the number is 45!")
 }
-else if(guess===46)
+else if(number_guess===46)
 {
 alert("Close, but the number is 45!")
 }
 else
 {
-alert("The number is 45 xP")
+alert("Wrong! The number is 45")
 }
  
 
